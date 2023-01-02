@@ -1,19 +1,3 @@
-#!/usr/bin/env python
-
-
-import confu
-parser = confu.standard_parser("FP16 configuration script")
-
-
-def main(args):
-    options = parser.parse_args(args)
-    build = confu.Build.from_options(options)
-
-    build.export_cpath("include", ["psimd.h"])
-
-    return build
-
-
-if __name__ == "__main__":
-    import sys
-    main(sys.argv[1:]).generate()
+version https://git-lfs.github.com/spec/v1
+oid sha256:0e3d5d06edcf9005b8a2d32e3cb008eff2cdf3d8cb8b6dc59706aec88e74c4f4
+size 343
